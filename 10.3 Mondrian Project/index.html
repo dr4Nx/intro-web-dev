@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 320px 9px 198px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 9px 155px 9px 20px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .border-default {
+      background-color: #000;
+    }
+
+    .white1 {
+      grid-column: span 4;
+    }
+
+    .border1 {
+      grid-column: span 6;
+    }
+
+    .white2 {
+      grid-row: span 3;
+    }
+
+    .white3 {
+      grid-area: 3 / 3 / 6 / 5;
+    }
+
+    .white4 {
+      grid-row: span 3;
+    }
+
+    .border2 {
+      grid-row: span 5;
+    }
+
+    .border3 {
+      grid-row: span 5;
+    }
+
+
+    .border5 {
+      grid-column: span 2;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red"></div>
+    <div class="border-default"></div>
+    <div class="white white1"></div>
+    <div class="border-default border1"></div>
+    <div class="white white2"></div>
+    <div class="border-default border2"></div>
+    <div class="white white3"></div>
+    <div class="border-default border3"></div>
+    <div class="blue"></div>
+    <div class="border-default"></div>
+    <div class="white white4"></div>
+    <div class="border-default border4"></div>
+    <div class="border-default border5"></div>
+    <div class="white"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+
+  </div>
+</body>
+
+</html>
